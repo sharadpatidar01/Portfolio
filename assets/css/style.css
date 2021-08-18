@@ -18,7 +18,6 @@ GENERAL STYLES
 ==============================*/
 
 @import url(http://fonts.googleapis.com/css?family=Anton|Maven+Pro:500,700);
-
 body {
     font-family: 'Maven Pro', sans-serif;
     line-height: 25px;
@@ -29,8 +28,8 @@ body {
 }
 
 section {
-    padding-bottom: 120px;
-    padding-top: 100px;
+    padding-bottom: 210px;
+    padding-top: 50px;
 }
 
 .btn {
@@ -55,62 +54,85 @@ section {
 .set-bk-clr:hover {
     background-color: rgba(107, 1, 41, 0.67);
 }
+
 /*==============================
 NAVBAR STYLES
 ==============================*/
+
 .navbar-default .navbar-brand, .navbar-default .navbar-brand:hover {
     color: #fff;
     font-size: 20px;
     text-transform: uppercase;
 }
-.navbar-brand {
-padding:0px;
 
+.navbar-brand {
+    padding: 0px;
 }
-    .navbar-brand img {
-        height:50px;
-    }
+
+.navbar-brand img {
+    height: 49px;
+    /* width: 100px; */
+    margin-top: 2px;
+    margin-bottom: -55px;
+}
+
+.navbar-brand h3 {
+    margin-top: 19px;
+    margin-bottom: 20px;
+    margin-left: 55px;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: lowercase;
+}
+
+.navbar-brand h3:hover {
+    color: rgb(250, 244, 244);
+    text-transform: uppercase;
+}
+
 .navbar-default .navbar-toggle {
     border-color: #FFF;
 }
 
-    .navbar-default .navbar-toggle .icon-bar {
-        background-color: #FFF;
-    }
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #FFF;
+}
 
-    .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-        background-color: rgba(0, 0, 0, 0);
-    }
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background-color: rgb(255, 255, 255);
+}
 
-.navbar-default .navbar-nav > li > a {
+.navbar-default .navbar-nav>li>a {
     color: #fff;
     font-weight: 900;
 }
 
-    .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-        color: #000;
-        text-decoration: none;
-    }
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+    color: #000;
+    text-decoration: none;
+}
 
 .navbar-default {
-    background-color: #FF2276;
+    background-color: crimson;
     border-color: transparent;
 }
+
 /* ADDED PADDING IN NAVBAR */
+
 .navbar {
     padding: 15px;
-    -webkit-transition: background .8s ease-out,padding .8s ease-out;
-    -moz-transition: background .8s ease-out,padding .8s ease-out;
-    transition: background .8s ease-out,padding .8s ease-out;
+    -webkit-transition: background .8s ease-out, padding .8s ease-out;
+    -moz-transition: background .8s ease-out, padding .8s ease-out;
+    transition: background .8s ease-out, padding .8s ease-out;
 }
+
 /* CLASS FOR REMOVING PADDING IN NAVBAR*/
+
 .navbar-pad-original {
     padding: 0px;
 }
 
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav > .active > a:focus {
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
     color: #000;
     background-color: rgba(0, 0, 0, 0);
     border-radius: 4px;
@@ -118,12 +140,11 @@ padding:0px;
     -moz-border-radius: 4px;
 }
 
-
 /* =============================================================
   HEADER SECTION STYLES
  ============================================================ */
 
-#header {
+#home {
     background: url(../img/home.jpg) no-repeat center center;
     padding: 0;
     -webkit-background-size: cover;
@@ -131,52 +152,269 @@ padding:0px;
     -moz-background-size: cover;
     background-attachment: fixed;
     color: #fff;
+    margin-top: 82px;
 }
 
-    #header .overlay {
-        background-color: rgba(3, 3, 3, 0.8);
-        min-height: 700px;
-    }
+#home .overlay {
+    background-color: rgba(3, 3, 3, 0.61);
+    min-height: 650px;
+}
 
-    #header h1 {
-        line-height: 60px;
-        font-size: 45px;
-        font-weight: 900;
-        padding-top: 180px;
-        padding-bottom: 35px;
-        color: #FF2276;
-    }
+#home img {
+    margin-top: 45px;
+    max-width: 228px;
+    height: auto;
+    cursor: pointer;
+}
 
+#home h1 {
+    line-height: 0px;
+    font-size: 40px;
+    font-weight: 900;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    color: crimson;
+}
 
-    #header h4 {
-        line-height: 30px;
-        font-size: 12px;
-        padding-bottom: 40px;
-        text-transform: uppercase;
-    }
+#home h4 {
+    line-height: 30px;
+    font-size: 14px;
+    padding-bottom: 0px;
+    text-transform: uppercase;
+}
+#home span{
+    color: crimson;
+}
+
+h1, h2 {
+    font-weight: 200;
+    margin: 0.4em 0;
+}
+
+h1 {
+    font-size: 3.5em;
+}
+
+h2 {
+    color: rgb(255, 254, 254);
+    font-size: 2em;
+}
+
+#social-icon {
+    margin-top: 1px;
+    display: inline-flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.socail-icon a {
+    font-size: 3rem;
+    display: inline-flex;
+    text-decoration: none;
+    width: 4rem;
+    height: 4rem;
+    margin: 1rem 1rem;
+    padding: 6px;
+    align-items: center;
+}
+
+.socail-icon a .fab {
+    color: rgb(218, 218, 218);
+}
+
+.fab {
+    font-family: 'Font Awesome 5 Brands';
+    font-weight: 400;
+}
+
+.fa, .fas, .far, .fal, .fad, .fab {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}
+
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+    position: relative;
+    min-height: 9px;
+    margin-top: 14px;
+    margin-bottom: 24px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#home {
+    background: url(../img/home.jpg) center center / cover no-repeat fixed;
+    padding: 0px;
+    color: rgb(255, 255, 255);
+    margin-top: 82px;
+}
+
+body {
+    font-family: "Maven Pro", sans-serif;
+    line-height: 21px;
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857;
+    color: rgb(51, 51, 51);
+    background-color: rgb(255, 255, 255);
+}
+
+html {
+    font-size: 10px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+html {
+    font-family: sans-serif;
+    text-size-adjust: 100%;
+}
+
+::before, ::after {
+    box-sizing: border-box;
+}
 
 /*================================
     SERVICES STYLES
 ==================================*/
-#services {
-    background-color: rgba(237, 237, 237, 1);
+
+#about {
+    background-color: rgba(255, 255, 255, 0.774);
 }
 
-    #services i {
-        font-size: 80px;
-        padding: 30px;
-        color: #FF2276;
-    }
+#about p {
+    font-size: 16px;
+    line-height: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    display: block;
+}
 
-    #services h4 {
-        padding-bottom: 5px;
-        padding-top: 15px;
-    }
+#about h2 {
+    text-align: center;
+}
+
+#about h3 {
+    display: flex;
+    font-weight: bold;
+    flex-direction: row;
+    color: crimson;
+    margin-bottom: 6rem;
+    font-style: italic;
+}
+
+#about h3:before {
+    content: "";
+    flex: 1 1;
+    border-bottom: 3px solid rgb(0, 0, 0);
+    margin: auto;
+}
+
+#about h3:after {
+    content: "";
+    flex: 1 1;
+    border-bottom: 3px solid rgb(0, 0, 0);
+    margin: auto;
+}
+
+h3 {
+    display: flex;
+    font-weight: bold;
+    flex-direction: row;
+    color: crimson;
+    margin-bottom: 6rem;
+    font-style: italic;
+}
+
+#about strong {
+    color: #000;
+    font-weight: 800;
+    font-size: 5rem;
+}
+
+.button {
+    border-radius: 4px;
+    background-color: #070707;
+    border: none;
+    font-size: 22px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.button i {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button i:after {
+    content: '\00bb';
+    /* content: '\f56e'; */
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover i {
+    padding-right: 25px;
+}
+
+.button:hover i:after {
+    opacity: 1;
+    right: 0;
+}
+
+.resume {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#about a {
+    text-decoration: none;
+    color: crimson;
+    border: 5px;
+    text-align: center;
+}
+
+.col-md-6.col-md-offset-3.col-sm-6.col-sm-offset-3.text-center {
+    margin-bottom: 32px;
+    width: 100%;
+    align-items: center;
+    display: block;
+}
+
+.rowservices {
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: -101px;
+}
+
 /* =============================================================
   CLIENTS SECTION STYLES
  ============================================================ */
 
-#clients {
+#skills {
     background: url(../img/clients.jpg) no-repeat center center;
     padding: 0;
     -webkit-background-size: cover;
@@ -185,47 +423,131 @@ padding:0px;
     background-attachment: fixed;
 }
 
-    #clients .overlay {
-        background-color: rgba(0,0,0,0.7);
-        padding-top: 90px;
-        min-height: 300px;
-        color: #fff;
-        padding-top: 100px;
-        padding-bottom: 100px;
-    }
+#skills .overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding-top: 90px;
+    min-height: 300px;
+    color: #fff;
+    padding-top: 10px;
+    padding-bottom: 0px;
+}
 
 .clients-carousel {
-    margin-top: 50px; /*SMALL TOP MARGIN FOR SPACE */
+    margin-top: 50px;
+    /*SMALL TOP MARGIN FOR SPACE */
     padding: 0 30px 30px 30px;
 }
 
-    .clients-carousel .thumbnail {
-        border: 1px solid #FF2276;
-    }
+.clients-carousel .thumbnail {
+    border: 1px solid crimson;
+}
 
-    .clients-carousel .carousel-control.left {
-        height: 30px;
-        width: 25px;
-        margin-top: 45px;
-        background: #FF2276;
-        left: -15px;
-    }
+.clients-carousel .carousel-control.left {
+    height: 30px;
+    width: 25px;
+    margin-top: 45px;
+    background: crimson;
+    left: -15px;
+}
 
-    .clients-carousel .carousel-control.right {
-        height: 30px;
-        width: 25px;
-        margin-top: 45px;
-        background: #FF2276;
-        right: -15px;
-    }
+.clients-carousel .carousel-control.right {
+    height: 30px;
+    width: 25px;
+    margin-top: 45px;
+    background: crimson;
+    right: -15px;
+}
 
-    .clients-carousel img {
-        width: 100%;
-        height: 120px;
-    }
+.clients-carousel img {
+    width: 100%;
+    height: 120px;
+}
 
-#clients .thumbnail {
+#skills .thumbnail {
     background-color: transparent;
+}
+
+.col-md-12 {
+    position: relative;
+    min-height: 9px;
+    margin-top: -1rem;
+    margin-bottom: 24px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.skills {
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 0rem 0rem 0rem 0rem;
+    margin: 0rem 0rem 12rem 0rem;
+    /* background:red; */
+    position: relative;
+}
+
+.skills h1 {
+    font-size: 5rem;
+    font-weight: 900;
+}
+
+.skills h3 {
+    display: flex;
+    font-weight: bold;
+    flex-direction: row;
+    color: crimson;
+    margin-bottom: 6rem;
+    font-style: italic;
+}
+
+.skills h3:before, h3:after {
+    content: "";
+    flex: 1 1;
+    border-bottom: 3px solid rgb(255, 255, 255);
+    margin: auto;
+}
+
+.skill-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 1.5rem 8rem;
+    text-align: left;
+}
+
+.skill-per {
+    height: 1rem;
+    background-color: crimson;
+    border-radius: .8rem;
+    width: 0;
+    transition: 1s linear;
+    position: relative;
+}
+
+.skill-per::before {
+    content: attr(per);
+    position: absolute;
+    padding: .6rem .6rem;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-size: 1.3rem;
+    border-radius: .4rem;
+    top: -3.9rem;
+    right: 0;
+    transform: translateX(50%);
+}
+
+.skill-per::after {
+    content: '';
+    position: absolute;
+    width: 1rem;
+    height: 1rem;
+    background-color: rgb(255, 255, 255);
+    top: -1.6rem;
+    right: 0;
+    transform: translateX(50%) rotate(45deg);
+    border-radius: .2rem;
 }
 
 /* =============================================================
@@ -233,39 +555,92 @@ padding:0px;
  ============================================================ */
 
 /* FOR CHANGING COLOR OF ACTIVE CATEGORY */
+
 .caegories a.active {
     background-color: #FF2276;
     border: 2px solid #FF2276;
 }
 
-/* FOR TRANSITION BEAUTIFULLY */
-.isotope .isotope-item {
-    -webkit-transition-duration: 0.8s;
-    -moz-transition-duration: 0.8s;
-    transition-duration: 0.8s;
+#works h1 {
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 900;
+    color: #000;
 }
 
-#works .work-wrapper {
-    border: 2px solid #FF2276;
-    padding: 2px;
-    margin: 5px 5px 10px 5px;
+#works h3 {
+    display: flex;
+    font-weight: bold;
+    flex-direction: row;
+    color: crimson;
+    margin-bottom: 6rem;
+    font-style: italic;
 }
 
-#works img {
-    filter: gray; /* FOR IE6-9 */
-    -webkit-filter: grayscale(1); /* FOR Google Chrome, Safari 6+ and  Opera 15+ */
-    opacity: 0.8;
+#works h3:before {
+    content: "";
+    flex: 1 1;
+    border-bottom: 3px solid rgb(0, 0, 0);
+    margin: auto;
 }
 
-    #works img:hover {
-        filter: none; /* FOR IE6-9 */
-        -webkit-filter: grayscale(0); /* FOR Google Chrome, Safari 6+ and  Opera 15+ */
-        opacity: 1;
-    }
+#works h3:after {
+    content: "";
+    flex: 1 1;
+    border-bottom: 3px solid rgb(0, 0, 0);
+    margin: auto;
+}
+
+#works h4 {
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    background-color: black;
+    border-radius: 4px;
+    margin: 1px 101px 19px 100px;
+    padding: 5px 5px 5px 5px;
+    font-family: 'FontAwesome';
+}
+
+#works strong {
+    color: #000;
+    font-weight: 800;
+    font-size: 5rem;
+}
+
+.my-work-dev {
+    display: inline-flex;
+    height: 35rem;
+    text-align: center;
+    margin-left: 100px;
+}
+
+.mywork {
+    background: transparent;
+    margin-left: 80px;
+    margin-right: 80px;
+    border: 3px  solid black;
+    background-color: crimson;
+    padding: 11px;
+    border-radius: 20px;
+    text-align: center;
+}
+.mywork:hover{
+    background-color: rgba(0, 0, 0, 0.39);
+    text-decoration-color: blanchedalmond;
+}
+#works p{
+    font-size: 34px;
+    font-weight: 600;
+    padding-top: 55px;
+    text-align: center;
+}
+
 /* =============================================================
-  TESTIMONIAL SECTION STYLES
+  CONTACT SECTION STYLES
  ============================================================ */
-#testimonial {
+
+#contact {
     background: url(../img/testimonial.jpg) no-repeat center center;
     padding: 0;
     -webkit-background-size: cover;
@@ -274,63 +649,104 @@ padding:0px;
     background-attachment: fixed;
 }
 
-    #testimonial .overlay {
-        background-color: rgba(0,0,0,0.7);
-        padding-top: 90px;
-        min-height: 300px;
-        color: #fff;
-        padding-top: 100px;
-        padding-bottom: 100px;
-    }
-/* =============================================================
-  TEAM SECTION STYLES
- ============================================================ */
-#team {
-    background-color: rgba(237, 237, 237, 1);
+#contact .overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding-top: 90px;
+    min-height: 500px;
+    color: #fff;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    height: 53rem;
 }
 
-.media img {
-    margin-right: 40px;
-    max-height: 150px;
-    margin-bottom: 20px;
-    border: 2px solid #FF2276;
+#contact h1 {
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 900;
+    color: rgb(255, 254, 254);
+    margin-top: -40px;
 }
 
-    .media img:hover {
-        opacity: 0.6;
-    }
-/* =============================================================
-  CONTACT SECTION STYLES
- ============================================================ */
-#contact {
-    background: url(../img/clients.jpg) no-repeat center center;
-    padding: 0;
-    -webkit-background-size: cover;
-    background-size: cover;
-    -moz-background-size: cover;
-    background-attachment: fixed;
+#contact h3 {
+    display: flex;
+    font-weight: bold;
+    flex-direction: row;
+    color: crimson;
+    margin-bottom: 6rem;
+    font-style: italic;
 }
 
-    #contact .overlay {
-        background-color: rgba(0,0,0,0.9);
-        padding-top: 90px;
-        min-height: 300px;
-        color: #fff;
-        padding-top: 100px;
-        padding-bottom: 100px;
-    }
+#contact h3:before {
+    content: "";
+    flex: 1 1;
+    border-bottom: 3px solid rgb(255, 255, 255);
+    margin: auto;
+}
+
+#contact h3:after {
+    content: "";
+    flex: 1 1;
+    border-bottom: 3px solid rgb(255, 255, 255);
+    margin: auto;
+}
+
+#contact strong {
+    color: #000;
+    font-weight: 800;
+    font-size: 5rem;
+}
+
+#contact a {
+    font-size: 7rem;
+    margin: 40px;
+    color: rgb(1, 110, 199);
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 30%;
+    background-color: crimson;
+    padding: 7px;
+}
+
+#contact a:hover {
+    background-color: transparent;
+    border: 2px solid crimson;
+}
+
+#contact i {
+    font-size: 7rem;
+    margin: 3px;
+    color: rgb(255, 255, 255);
+}
+
+#contact i:hover {
+    font-size: 7rem;
+    margin: 3px;
+    color: crimson;
+}
+
+#contact .row {
+    /* background-color: rgb(1, 110, 199); */
+    padding: 30px;
+}
+
+#contact p {
+    font-size: 20px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
 /* =============================================================
   FOOTER SECTION STYLES
  ============================================================ */
+
 footer {
-    padding: 20px;
+    padding: 6px;
     font-size: 15px;
     text-align: center;
     font-weight: 900;
     background-color: rgba(237, 237, 237, 1);
 }
 
-    footer a, footer a:hover {
-        color: #000;
-        text-decoration: none;
-    }
+footer a, footer a:hover {
+    color: #000;
+    text-decoration: none;
+}
