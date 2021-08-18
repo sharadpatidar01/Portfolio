@@ -1,2 +1,0 @@
-# sharadpatidar.github.io
-# portfolio
