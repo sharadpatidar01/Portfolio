@@ -765,9 +765,6 @@ footer a:hover {
 /* mobile responsive web */
 
 @media only screen and (max-width: 777px) {
-    body {
-        overflow: hidden;
-    }
     #contact .overlay {
         min-height: 500px;
         height: 70rem;
