@@ -156,7 +156,7 @@ NAVBAR STYLES
 }
 
 #home .overlay {
-    background-color: rgba(3, 3, 3, 0.61);
+    /* background-color: rgba(3, 3, 3, 0.61); */
     min-height: 650px;
 }
 
