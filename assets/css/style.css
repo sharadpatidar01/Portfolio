@@ -358,6 +358,9 @@ h3 {
     cursor: pointer;
     margin: 5px;
 }
+.button:hover{
+    background-color:white;
+}
 
 .button i {
     cursor: pointer;
@@ -383,6 +386,7 @@ h3 {
 .button:hover i:after {
     opacity: 1;
     right: 0;
+
 }
 
 .resume {
