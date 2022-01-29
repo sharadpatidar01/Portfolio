@@ -1,8 +1,7 @@
 My Protfolio
 - 👋 Hi, I’m Sharad Patridar
-- 👀 I’m interested in Software development 
-- 🌱 I’m currently learning JAVA Language
-- 💞️ I’m looking to collaborate on Software Development 
+- 👀 I’m interested in full stack web development 
+- 💞️ I’m looking to collaborate on web Development 
 - 📫 get in touch -Mail at patidarsharad01@gmail.com
 
 <!---
