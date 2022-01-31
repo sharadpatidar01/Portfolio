@@ -1,22 +1,4 @@
-﻿/*=============================================================
-    Authour URL: www.designbootstrap.com
-    
-    http://www.designbootstrap.com/
-
-    License: MIT
-
-    http://opensource.org/licenses/MIT
-
-    100% Free To use For Personal And Commercial Use.
-
-    IN EXCHANGE JUST TELL PEOPLE ABOUT THIS WEBSITE
-   
-========================================================  */
-
-/*==============================
-GENERAL STYLES
-==============================*/
-
+﻿
 @import url(http://fonts.googleapis.com/css?family=Anton|Maven+Pro:500,700);
 body {
     font-family: 'Maven Pro', sans-serif;
@@ -28,8 +10,8 @@ body {
 }
 
 section {
-    padding-bottom: 210px;
-    padding-top: 50px;
+    padding-bottom: 40px;
+    padding-top: 40px;
 }
 
 .btn {
@@ -565,6 +547,7 @@ h3 {
 }
 #works{
     text-align: center;
+    display: flex;
 }
 
 #works h1 {
@@ -577,7 +560,7 @@ h3 {
 #works h3 {
     display: flex;
     font-weight: bold;
-    flex-direction: row;
+    /* flex-direction: row; */ 
     color: crimson;
     margin-bottom: 6rem;
     font-style: italic;
@@ -603,8 +586,8 @@ h3 {
     text-align: center;
     background-color: black;
     border-radius: 4px;
-    margin: 1px 101px 19px 100px;
-    padding: 5px 5px 5px 5px;
+    padding: 9px 0px 9px 0px;
+    margin-bottom: 3px;
     font-family: 'FontAwesome';
 }
 
@@ -615,10 +598,15 @@ h3 {
 }
 
 .my-work-dev {
-    display: inline-flex;
-    height: 35rem;
+    display:flex;
+    height: auto;
     text-align: center;
     justify-content: center;
+}
+.mywork img{
+    border: 2px solid rgb(255, 252, 252);
+    margin: 15px;
+    border-radius: 15px;
 }
 
 .mywork {
@@ -626,14 +614,14 @@ h3 {
     margin-left: 8px;
     margin-right: 8px;
     border: 3px solid black;
-    background-color: crimson;
+    background-color: rgb(220, 20, 60);
     padding: 11px;
     border-radius: 20px;
     text-align: center;
 }
 
 .mywork:hover {
-    background-color: rgba(0, 0, 0, 0.39);
+    background-color: rgba(0, 0, 0, 0);
     text-decoration-color: blanchedalmond;
 }
 
@@ -642,6 +630,27 @@ h3 {
     font-weight: 600;
     padding-top: 55px;
     text-align: center;
+}
+
+.democode {
+border: 2px solid rgb(5, 250, 156);
+border-radius: 20px;
+margin: 10px;
+background-color: rgb(0, 0, 0);
+
+}
+.democode:hover {
+border: 2px solid rgb(0, 0, 0);
+background-color: crimson;
+
+}
+.btn{
+    font-weight:bold;
+    color: rgb(255, 255, 255);
+    width: 100%;
+}
+.btn:hover{
+    color: rgb(0, 0, 0);
 }
 
 /* =============================================================
